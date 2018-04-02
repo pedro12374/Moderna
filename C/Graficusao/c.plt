@@ -1,24 +1,23 @@
 set output 'c.pdf'
 set terminal pdfcairo
 
-set yrange[-2000:2000]
-set xrange[-40:40]
+set xrange[-2000:2000]
+set yrange[-40:40]
 
 
 set grid
 show grid
+set key left
 
 
 
-
-
-set xlabel '{/Symbol D}s (10^{-8}m)'
-set ylabel 'f(Hz)'
+set ylabel "{/Symbol D}s' (10^{-8}m)"
+set xlabel 'f(Hz)'
 
 f(x) = a+b*x
 fit f(x) 'Data.dat' via a,b
 
-title_f(g,h) = sprintf('f(x) = %.2f + %.2fx',g,h)
+title_f(g,h) = sprintf('{/Symbol D}s = %.2f*10^{-8}f',h)
 plot 'Data.dat' ps 2 t 'Dados Obtidos',f(x) t title_f(a,b) ls -1 lw 1.5
 
 unset output
