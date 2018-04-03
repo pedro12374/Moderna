@@ -38,10 +38,10 @@ $\Delta$ s' & $f$   \\ \hline
 
 Utilizando os dados obtidos, foi plotado um gráfico do deslocamento do ponto ($\Delta$s') com a respectiva frequência ($f$) do espelho, e calculando o
 ajuste linear obteve-se a equação da reta $\Delta s
-=0.02\times10^{-8}f$.
+=0.02\times10^{-5}f$.
 
 
-\begin{figure}[!h]
+\begin{figure}[!ht]
 	\centering
 		\includegraphics[scale= 1.1]{Graficusao/c.pdf}
 	\caption{Relação entre deslocamento ($\Delta$s') do ponto e a frequência (f)do espelho }
@@ -57,19 +57,30 @@ Sabendo que
 \begin{equation}
 \begin{split}
 	\Delta s = \frac{4AD^22\pi f}{(D+B)c}\\
-	\Delta s = 2\times10^{-10}f
+	\Delta s = 2\times10^{-7}f
 \end{split}
 \end{equation}
 portanto,
 \begin{equation}
-\begin{split}
-	2\times10^{-10}=\frac{8AD^2\pi}{(D+B)c}\\
-	c=\frac{8AD^2\pi}{(D+B)2\times10^{-10}}
-\end{split}
+	2\times10^{-7}=\frac{8AD^2\pi}{(D+B)c}\\
+\end{equation}
+\begin{equation}
+	c=\frac{8AD^2\pi}{(D+B)2\times10^{-7}}
+\label{EQ}
 \end{equation}
 Substituindo os valores obtidos
 \begin{equation}
 	\begin{split}
-		A = 0,261 m \pm 0,0
+		A = (0,261\pm0,0005)m\\
+		B = (0,586\pm0,0005)m\\
+		D = (9,485\pm0,0005)m
 	\end{split}
+\end{equation}
+na equação \ref{EQ} obten-se
+\begin{equation}
+	c=\frac{8*(0,261)*(9,485)^2*\pi}{[9,485+0,586]*2\times10^{-7}}
+\end{equation}
+e portanto
+\begin{equation}
+	c=2,929\times10^{8}
 \end{equation}
