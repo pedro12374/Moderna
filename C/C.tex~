@@ -34,9 +34,9 @@
 	\include{Intr}
 	\include{DisTeo}
 	\include{DesExp}
-	\input{Concl}
 	
-\vspace{5cm}
+	\input{Concl}
+
 	\begin{thebibliography}{1}
     	\bibitem{PASCO}PASCO, \it{Speed of Light Apparatus}, Instruction Manual and 	Experiment Guide for the PASCO Scientific Model OS-9261A, 62 and 63A.
 	\end{thebibliography}	
