@@ -1,6 +1,6 @@
 \section{Desenvolvimento Experimental}
 \subsection{Materiais e Métodos}
-Foram utilizados para a realização do experimento:
+oram utilizados para a realização do experimento:
 \begin{itemize}
 	\item Mini-laser;
 	\item Mesa de alinhamento;
@@ -11,96 +11,84 @@ Foram utilizados para a realização do experimento:
 	\item Um espelho fixo esférico com raio de 13,5 m;
 \end{itemize}
 Sendo o experimento montado da seguinte forma:
-\begin{figure}[h!]
-	\centering
-	\fbox{\includegraphics[scale= 0.35]{mtg}}
-	\caption{Montagem experimental utilizada}
-\end{figure}
+		
 
 
 Primeiro o laser e o espelho rotatório são alinhados sobre a mesa com o auxílio dos gabaritos, é posto então a primeira lente (48 mm), em seguida o separador de feixes e então a segunda lente (252 mm), é fundamental que ao colocar cada objeto óptico seja revisado seu alinhamento com o plano do laser. Utilizando regras trigonométricas, é posto então o espelho fixo esférico a cerca de 9 metros
 do espelho giratório, formando entre eles um ângulo de aproximadamente 12º e, em seguida, alinhado seus centros observando  se o raio de luz está retornando ao separador de feixes. Nessa última etapa, é substituido a ocular do separador por um papel de pequena gramatura e, bloqueando o feixe de luz refletido pelo espelho rotatório, pode-se ver um ponto piscando no papel, o que significa que os espelhos estão alinhados. Por fim, é recolocado a ocular e alinhado o mostrador do micrômetro com o ponto de luz.
+
 \subsection{Dados Obtidos Experimentalmente}
-Após a realização do experimento, foram obtidos os dados que estão na
-Tabela 1.
-\begin{table}[h!]
-\caption{Dados obtidos experimentalmente com seus respectivos erros}
-\centering
-
-\begin{tabular}{|	c	|	c	|}
-\hline
-$\Delta$ s'$\pm 2,5(mm)$ & $f \pm 1(Hz)$   \\ \hline
-14          & 750   \\ \hline
-30          & 1500  \\ \hline
--15         & -750  \\ \hline
--30         & -1500 \\ \hline
-\end{tabular}
-\end{table}
-
-Utilizando os dados obtidos, foi gerado em programa o gráfico da
-Figura 2,contendo o deslocamento do ponto ($\Delta$s') com a respectiva frequência ($f$) do espelho, e calculando o
-ajuste linear obteve-se a equação da reta $\Delta s
-=2.00\times10^{-7}f$.
-
+Após a realização do experimento duas vezes, foram obtidos os dados e utilizando os mesmos, foi gerado em programa o gráfico da Figura \ref{fig},contendo a diferença de potencial aplicada (DDP) com o respectivo raio do feixe de elétrons ($r$), e calculando o ajuste linear obteve-se a equação $V = 98079.57r^2 $
 
 \begin{figure}[!ht]
 	\centering
-		\includegraphics[scale= 1.1]{Graficusao/c.pdf}
-	\caption{Relação entre deslocamento ($\Delta$s') do ponto e a
-frequência ($f$) do espelho, com equação igual a $\Delta s
-=(2.00\pm0.02)\times10^{-7}f$}
+		\includegraphics[scale= 1.1]{graf/e_m.pdf}
+	\caption{Relação entre a diferença de potencial($DDP$) usado para acelerar os elétrons e o raio ($r$) formado pelos elétrons, com equação igual a $V = (98079.57\pm 1219.33)r^2$}
+\label{fig}
 \end{figure}
 
 \subsection{Interpretação dos Resultados}
 
 Sabendo-se que
 \begin{equation}
-	c = \frac{4AD^22\pi f}{(D+B)\Delta s}
+	\frac{e}{m}=\frac{2V\left(\frac{5}{4}\right)^3a^2}{[N\mu _0 Ir]^2}
 \end{equation}
 é possível fazer
 \begin{equation}
+	V = \frac{[N \mu _0 I]^2\left(\frac{e}{m}\right)}{2(5/4)^3a^2}r^2
+\end{equation}
+onde fazendo
+\begin{equation}
 \begin{split}
-	\Delta s = \frac{4AD^22\pi f}{(D+B)c}\\
-	\Delta s = 2\times10^{-7}f
+	\lambda = \frac{[N \mu _0 I]^2\left(\frac{e}{m}\right)}{2(5/4)^3a^2}\\
+	V = \lambda r^2
+\label{eq1}
 \end{split}
 \end{equation}
-portanto,
+sabendo que
 \begin{equation}
-	2\times10^{-7}=\frac{8AD^2\pi}{(D+B)c}\\
+	V = 98079,57r^2
+\label{eq2}
 \end{equation}
+igualando \ref{eq1} e \ref{eq2} é obtido
+\begin{equation*}
+	\lambda = 98079,57
+\end{equation*}
+e portanto
 \begin{equation}
-	c=\frac{8AD^2\pi}{(D+B)2\times10^{-7}}
-\label{EQ}
+	98079,57 =  \frac{[N \mu _0 I]^2\left(\frac{e}{m}\right)}{2(5/4)^3a^2}
 \end{equation}
-Substituindo os valores obtidos
-\begin{equation}
+onde $N,\mu _0,I$ e $a$ são:
+\begin{equation*}
 	\begin{split}
-		A = (0,261\pm0,0005)m\\
-		B = (0,586\pm0,0005)m\\
-		D = (9,485\pm0,0005)m
+		N=130\\
+		\mu _0 =4\pi\times10^{-7}\\
+		I=(1,24\pm0,01)A\\
+		a=0,15cm
 	\end{split}
-\end{equation}
-na equação \ref{EQ} obtem-se
+\end{equation*}
+substituindo os valores
 \begin{equation}
-	c=\frac{8*(0,261)*(9,485)^2*\pi}{[9,485+0,586]*2\times10^{-7}}
+	98079,57 =  \frac{[130*4\pi\times10^{-7}*1,24]^2\left(\frac{e}{m}\right)}{2(5/4)^30,15^2}
 \end{equation}
 e portanto
 \begin{equation}
-	c=(2,929\pm0,032)\times10^{8} m/s
+	\frac{e}{m}=\frac{98079,57*2*(5/4)^3*0,15^2}{[130*4\pi\times10^{-7}*124]^2}
 \end{equation}
-onde o valor de $0,032$ é obtido utilizando a equação \ref{eq:err}.\\
-Comparado ao valor de 
+resolvendo
 \begin{equation}
-	c=2,998\times10^{8} m/s
+	\frac{e}{m}=2,10\times10^{11}Q/kg
+\end{equation}
+Comparando com o valor de 
+\begin{equation}
+	c=1,76\times10^{} Q/Kg
 \end{equation}        
 obtido na literatura \cite{PASCO}, resulta em um erro relativo ($Er$) de:
 \begin{equation}
-	Er=|\frac{2,929\times10^{8}-2,998\times10^{8}}{2,998\times10^{8}}|*100\%= 2,3\%
+	Er=\left|\frac{1,76\times10^{11}-2,10\times10^{11}}{1,76\times10^{11}}\right|*100\%= 19,31\%
 \end{equation}
 
-Estes erros estão associados a montagem do experimento, sendo
-possível um desalinhamento dos espelhos e lentes, além do feixe não estar colidindo exatamente no
-centro do espelho fixo, o que acarreta uma variação do valor de $c$ predito na literatura. Porém, mesmo com todos os fatores associados, o erro  de
-2,3\% é aceitável dentro da precisão necessária para a realização
-do experimento.
+Estes erros estão associados a obtenção dos dados, sendo
+possível um erro de paralaxe durante a visualização dos dados na régua espelhada, o que acarreta uma variação do valor de $c$ predito na literatura. Porém, mesmo com todos os fatores associados, o erro  de
+19,31\% é aceitável dentro da precisão necessária para a realização do experimento.
 

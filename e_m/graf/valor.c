@@ -7,7 +7,7 @@ int main(int argc, char **argv){
 	a  = 0.15;
 	I  = 1.24;
 	mi = 4*M_PI*pow(10,-7);
-	K  = 100683.45;
+	K  = 98079.57;
 	B = (N*mi*I)/(pow(5.0/4.0,3.0/2.0)*a);
 	lbd =(2*K)/(pow(B,2));
 	printf("%e\n", lbd);
