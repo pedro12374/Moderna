@@ -1,4 +1,5 @@
-\section{Fundamentação Teórica}
+\section{Desenvolvimento Teórico}
+\subsection{Razão Carga Massa}
 A força magnética atuante em uma partícula eletricamente carregada de carga {\it q} num campo magnético {\it B} é dado pela equação
 \begin{equation}
 F_m = qv \times B
@@ -39,7 +40,33 @@ O campo magnético produzido por um par de bobinas de Helmholtz é, nas proximid
 Substituindo \ref{eq: v} e \ref{B} na equação \ref{eq: em},
 \begin{equation}
 	\frac{e}{m}=\frac{v}{rB}=\frac{2V\left(\frac{5}{4}\right)^3a^2}{[N\mu _0 Ir]^2}
+	\label{e/m}
 \end{equation}
 Onde $V$ é a energia potencial dos elétrons, $a$ o raio das bobinas de Helmholtz, $N$ o número de espiras em cada bobina de Helmholtz, $\mu _0$ a permeabilidade elétrica do meio, $I$ a corrente elétrica gerada nas bobinas e $r$ o raio de feixe de elétrons.
 
 É possível determinar a relação carga/massa facilmente por este último resultado visto que é composto por constantes($N=130$ e $\mu _0 =4\pi 10^{-7}$) e valores que são ajustados nas fontes no decorrer do experimento.
+\subsection{Desvios}
+  \subsubsection{Desvio de Medidas Diretas}
+  Para este experimento, tem-se como medidas diretas, o raio do feixe de elétrons formado dentro do tubo, sendo utilizada uma régua que a menor partição tem $1mm$ o erro associado é de $0,5mm$ ou $0,0005m$, e também a amperagem e voltagem utilizada nas bobinas de Helmholtz, sendo um multímetro digital, seu erro é $\pm 1$ a menor unidade.
+  \subsubsection{Desvio de Medidas Indiretas}
+  Para o cálculo da razão carga massa é utilizada a equação \ref{e/m}, mas substituindo $V$ e $r^2$ por $\lambda$ se obtém a igualdade \ref{eq1} e para o cálculo dos erros, é aplicado o logaritmo neperiano em ambos os lados da equação, tornando-se:
+  \begin{equation}
+      ln\left(\frac{e}{m}\right)=ln\left(\frac{2\lambda\left(\frac{5}{4}\right)^3a^2}{[N\mu _0 I]^2}\right)
+  \end{equation}
+   utilizando propriedades de logaritmos, é obtido
+  \begin{equation}
+      ln(e/m)=ln\left(2\lambda\left(\frac{5}{4}\right)^3a^2\right)-ln\left([N\mu _0 I]^2\right)
+  \end{equation}
+  \begin{equation}
+      ln(e/m)=ln(2\lambda)+3ln(5/4)+2ln(a)-2(ln(N)+ln(\mu _0)+ln(I))
+  \end{equation}
+  diferenciando a equação e eliminando os termos constantes ou sem erro associado
+  \begin{equation}
+      \frac{de/m}{e/m}=\frac{d\lambda}{\lambda} + \frac{2dI}{I}
+  \end{equation}
+  e fazendo $d\rightarrow \delta$ para poder ser aplicado os erros medidos experimentalmente. Onde $\delta$ representa o erro associado.
+  \begin{equation}
+      \frac{\delta e/m}{e/m}=\frac{\delta\lambda}{\lambda} + \frac{2\delta I}{I}
+  \label{eq:err}
+  \end{equation}
+
