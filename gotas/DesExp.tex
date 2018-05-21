@@ -13,77 +13,88 @@ Foram utilizados para a realização do experimento:
 O experimento consiste em um tubo com gás rarefeito  ao qual é acoplado um filamento de metal. Liga-se o filamento a uma fonte em uma tensão menor que 6,0 $volts$, então ao passar uma corrente pelo fio este emitirá elétrons os quais serão defletidos em forma de feixe, que ionizarão o gás formando um rastro de luz. Em seguida, deve-se regular o foco do feixe através do botão a frente do equipamento. É submetido o tubo a um campo margnético uniforme por meio de uma bobina cuja corrente e voltagem podem ser controladas pelo painel frontal. O campo defletirá o fixe de elétrons em um círculo que poderá ser medido por uma régua ao fundo do tubo. Para se calcular a razão carga-massa é preciso variar a voltagem da bobina e consequentemente o raio ao qual o feixe é defletido. A variação é dada entre 150 e 300 $volts$ atingidas de 10 em 10 $volts$.
 
 \subsection{Dados Obtidos Experimentalmente}
-Após a realização do experimento duas vezes, foram obtidos diversos dados e utilizando os mesmos, foi gerado em programa o gráfico da Figura \ref{fig},contendo a diferença de potencial aplicada (DDP) com o respectivo raio do feixe de elétrons ($r$), e calculando o ajuste linear obteve-se a equação $V = 98079.57r^2 $
+Após a realização do experimento duas vezes, foram obtidos diversos tempos de subida e descida, utilizando os mesmos, foram calculadas as velocidades de subida e descida e também o raio de cada gota, como é possível ver na tabela \ref{tab:Vel}
 
-\begin{figure}[!ht]
-	\centering
-		\includegraphics[scale= 1.0]{graf/e_m.pdf}
-	\caption{Relação entre a diferença de potencial($DDP$) usado para acelerar os elétrons e o raio ($r$) formado pelos elétrons, com equação igual a $V = (98079.57\pm 1219.33)r^2$}
-\label{fig}
-\end{figure}
+\begin{table}[ht!]
+\centering
+
+\begin{tabular}{l|ll|ll|ll|}
+\rowcolor[HTML]{C0C0C0} 
+Gota & $V_d \times 10^{-5}(m/s)$ & $\Delta V_d (m/s)$ & $V_s \times 10^{-5}(m/s)$ & $\Delta V_s (m/s)$ & $a \times 10^{-7}(m)$ & $\Delta a(m)$ \\
+1    & 2,28                      & 0,01               & 2,03                      & 0,05               & 4,69                  & 0,03          \\
+\rowcolor[HTML]{C0C0C0} 
+2    & 2,75                      & 0,14               & 2,6                       & 0,2                & 5,16                  & 0,15          \\
+3    & 2,8                       & 0,15               & 1,9                       & 0,01               & 5,21                  & 0,16          \\
+\rowcolor[HTML]{C0C0C0} 
+4    & 3,08                      & 0,22               & 3,1                       & 0,33               & 5,46                  & 0,23          \\
+5    & 3,25                      & 0,27               & 3,39                      & 0,41               & 5,61                  & 0,27          \\
+\rowcolor[HTML]{C0C0C0} 
+6    & 2,06                      & 0,05               & 1,64                      & 0,06               & 4,46                  & 0,04          \\
+7    & 1,43                      & 0,22               & 0,6                       & 0,33               & 3,68                  & 0,24          \\
+\rowcolor[HTML]{C0C0C0} 
+8    & 1                         & 0,33               & 0,91                      & 0,25               & 3,09                  & 0,4           \\
+9    & 1,52                      & 0,19               & 1,5                       & 0,09               & 3,82                  & 0,21          \\
+\rowcolor[HTML]{C0C0C0} 
+10   & 1,65                      & 0,16               & 0,53                      & 0,35               & 3,98                  & 0,17          \\
+11   & 2,1                       & 0,04               & 0,87                      & 0,26               & 4,5                   & 0,03          \\
+\rowcolor[HTML]{C0C0C0} 
+12   & 2,02                      & 0,06               & 1,89                      & 0,01               & 4,41                  & 0,05          \\
+13   & 2,46                      & 0,06               & 1,93                      & 0,02               & 4,87                  & 0,07          \\
+\rowcolor[HTML]{C0C0C0} 
+14   & 3,06                      & 0,22               & 3                         & 0,31               & 5,44                  & 0,22           \\ \hline 
+\end{tabular}
+\caption{Valores calculados para as velocidades de descida($V_d$), velocidade de subida($V_s$) e o raio de cada gota($a$), assim como o desvio padrão associado a cada medida.}
+\label{tab:Vel}
+\end{table}
+
+Com os valores obtidos e  utilizando a equação[CITAS A LA DE CIMA] é possível encontrar o valor de carga que cada gota possui, explicito na tabela \ref{tab:Car}.
+
+\begin{table}[!htb]
+\centering
+
+\begin{tabular}{|l|ll|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+Gota & $Carga \times 10^{-19} (C)$ & $\Delta Carga \times 10^{-19} (C)$ \\ \hline
+1    & 1,09                        & 0,29                               \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+2    & 1,49                        & 0,4                                \\ \hline
+3    & 1,32                        & 0,35                               \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+4    & 1,82                        & 0,49                               \\ \hline
+5    & 2,01                        & 0,54                               \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+6    & 0,89                        & 0,24                               \\ \hline
+7    & 0,4                         & 0,11                               \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+8    & 0,31                        & 0,08                               \\ \hline
+9    & 0,62                        & 0,17                               \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+10   & 0,46                        & 0,12                               \\ \hline
+11   & 0,72                        & 0,19                               \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+12   & 0,93                        & 0,25                               \\ \hline
+13   & 1,15                        & 0,31                               \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+14   & 1,78                        & 0,48                               \\ \hline
+\end{tabular}
+\caption{Valores da carga associada a cada gota, assim como o seu respectivo desvio padrão.}
+\label{tab:Car}
+\end{table}
+
+
 
 \subsection{Interpretação dos Resultados}
+Utilizando os dados contidos na tabela \ref{tab:Car} é possível produzir o gráfico \ref{im:Car} que contêm a carga pelo número da gota, e assim analisar de forma adequada os dados obtidos.
 
-Sabendo-se que
-\begin{equation}
-	\frac{e}{m}=\frac{2V\left(\frac{5}{4}\right)^3a^2}{[N\mu _0 Ir]^2}
-\end{equation}
-é possível fazer
-\begin{equation}
-	V = \frac{[N \mu _0 I]^2\left(\frac{e}{m}\right)}{2(5/4)^3a^2}r^2
-\end{equation}
-onde fazendo
-\begin{equation}
-\begin{split}
-	\lambda = \frac{[N \mu _0 I]^2\left(\frac{e}{m}\right)}{2(5/4)^3a^2}\\
-	V = \lambda r^2
-\label{eq1}
-\end{split}
-\end{equation}
-sabendo que
-\begin{equation}
-	V = 98079,57r^2
-\label{eq2}
-\end{equation}
-igualando \ref{eq1} e \ref{eq2} é obtido
-\begin{equation*}
-	\lambda = 98079,57
-\end{equation*}
-e portanto
-\begin{equation}
-	98079,57 =  \frac{[N \mu _0 I]^2\left(\frac{e}{m}\right)}{2(5/4)^3a^2}
-\end{equation}
-onde $N,\mu _0,I$ e $a$ são:
-\begin{equation*}
-	\begin{split}
-		N=130\\
-		\mu _0 =4\pi\times10^{-7}\\
-		I=(1,24\pm0,01)A\\
-		a=0,15cm
-	\end{split}
-\end{equation*}
-substituindo os valores
-\begin{equation}
-	98079,57 =  \frac{[130*4\pi\times10^{-7}*1,24]^2\left(\frac{e}{m}\right)}{2(5/4)^30,15^2}
-\end{equation}
-e portanto
-\begin{equation}
-	\frac{e}{m}=\frac{98079,57*2*(5/4)^3*0,15^2}{[130*4\pi\times10^{-7}*124]^2}
-\end{equation}
-resolvendo
-\begin{equation}
-	\frac{e}{m}=(2,10\pm0,08)\times10^{11}Q/kg
-\end{equation}
-Comparando com o valor de 
-\begin{equation}
-	c=1,76\times10^{} Q/Kg
-\end{equation}        
-obtido na literatura \cite{PASCO}, resulta em um erro relativo ($Er$) de:
-\begin{equation}
-	Er=\left|\frac{1,76\times10^{11}-2,10\times10^{11}}{1,76\times10^{11}}\right|*100\%= 19,31\%
-\end{equation}
+\begin{figure}[!htb]
+	\centering
+		\includegraphics[scale= 1]{grafico/gotas.pdf}
+	\caption{Distribuição de carga das gotas}
+	\label{im:Car}
+\end{figure}
 
-Estes erros estão associados a obtenção dos dados, sendo
-possível um erro de paralaxe durante a visualização dos dados na régua espelhada, o que acarreta uma variação do valor de $c$ predito na literatura. Porém, mesmo com todos os fatores associados, o erro  de
-19,31\% é aceitável dentro da precisão necessária para a realização do experimento.
+
+Analisando o gráfico \ref{im:Car} temos que as gotas estão separadas em três grupos, um primeiro com as gotas 6,7,8,9,10,11,12, o segundo grupo com as gotas 1,2,3,4,13,14 e um terceiro grupo com a gota 5. Com isto somos levados a crer que o incremento de carga não é continuo e sim discreto ou quantizado, e isto pode ser aferido realizando a diferença entre as médias de carga de cada grupo.
+
 
