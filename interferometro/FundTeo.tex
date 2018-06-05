@@ -1,101 +1,53 @@
-\section{FundamentaÃ§Ã£o TeÃ³rica}
 
-	Analisando as forÃ§as existentes na gota durante sua subida e sua descida Ã© possÃ­vel obter a equaÃ§Ã£o para determinaÃ§Ã£o da carga do elÃ©tron contido dentro das gotas.
- 
+\begin{document}
 
-\begin{figure}[!htb]
-	\centering
-	\includegraphics[scale= 1.0]{Esquema}		
-	\caption{ForÃ§as presentes na gota descendo (direita) e subindo (esquerda)}
-	\label{im:Esq}
-\end{figure}
+\section{Fundamentação Teórica}
+\subsection{O Interferômetro de Michelson}
 
+	Em 1801, o físico e médico inglês Thomas Young desenvolveu o experimento de fenda dupla que demonstrou o fenômeno de interferência luminosa. Aproximadamente 80 anos depois, o físico Albert Abraham Michelson desenvolveu um interferômetro com mecanismo similar ao de Young. Vale ressaltar que o experimento foi concebido inicialmente com o intuito de comprovar a existência o éter como meio material.
+	O interferômetro de Michelson se tornou mundialmente famoso devido à sua relatividade simplicidade e alta aplicabilidade, tanto no meio didático quanto no experimental. A Figura 1 demonstra o funcionamento do aparato.
 
+Figura 1 – Interferômetro de Michelson
 
+Ao sair do laser a luz atinge o beam-splitter, onde é dividida de modo que 50% da mesma atinja o espelho fico M1 e os outros 50% o espelho M2. Ao atingir ambos os espelhos, a luz é refletida em direção ao beam-splitter mais uma vez. No caminho de volta, os dois feixes são projetados na tela de visualização. A separação e posteriormente união dos feixes gera uma pequena defasagem entre os mesmos, essa defasagem é o que causa a interferência. Como a diferença de fase é da ordem do comprimento de onda, faz-se necessário o uso de uma lente divergente que amplia a imagem projetada, o que possibilita a visualização do padrão de interferência.
 
-	Na subida temos os seguintes termos:
+Figura 2 – Padrão de interferência
+
+	A defasagem entre os feixes de luz decorre da alavanca acoplada no espelho M2, ao variar a posição da alavanca é possível gerar uma diferença de fase entre os feixes de luz no momento em que se encontram projetados.
+	Ao realizar sucessivas variações na posição do espelho M2 é possível determinar o comprimento \lambda a partir da distância d_{m} medida ao girar a alavanca de M2 e do número de franjas de interferência usando a equação:
+
+\lambda =  \frac{d_{m}}{m}
+
+	Se \lambda for conhecido, a mesma equação pode ser utilizada para determinar a distância d_{m}.
+
+\subsection{Medição do Índice de Refração do Ar}
+
+	Por ser um equipamento extremamente sensível, verifica-se que vibrações como andar próximo ao aparato é o suficiente para provocar variações no padrão de interferência observado. Tendo em vista essa sensibilidade, torna-se possível medir o índice de refração do ar usando o mesmo equipamento.
+	Ao posicionar uma câmara de vácuo em um dos braços do caminho óptico e variar a pressão dentro da mesma, verifica-se uma série de variações no padrão de interferência projetado.
+	Considerando a pressão inicial da câmara como P_{i} e a final como P_{f}, tem-se as equações:
+\lambda_{i} = \frac{2d_{i}}{\Delta m_{i}}
+\lambda_{f} = \frac{2d_{f}}{\Delta m_{i}}
+	Intuitivamente, observa-se que para a diferença de pressão P_{f}-P_{i} surge a relação
+\Delta m = \Delta m_{f} - \Delta m_{i}
+\Delta m = \frac{2d}{\lambda_{f}} - \frac{2d}{\lambda_{i}}
+\Delta m = \frac{2d}{\frac{\lambda_{0}}{n_{f}}} - \frac{2d}{\frac{\lambda_{0}}{n_{i}}}
+\Delta m = \frac{2d}{\lambda_{0}}(n_{f}-n{i}})
+(n_{f}-n_{i}) = \frac{\Delta m \lambda_{0}}{2d}
+	Dividindo a equação por (P_{f} – P_{i}),
+\frac{n_{f}-n_{i}}{P_{f}-P_{i}} = \frac{\Delta m \lambda_{0}}{2d} \frac{1}{P_{f}-P_{i}}
+	De onde é possível escrever, por fim,
+n_{f} = n_{i} + \frac{\Delta m \lambda}{2d \Delta P} (P_{atm}-P_{0})
+	Onde
 \begin{itemize}
-\item k: constante de atrito com o meio;
-\item $v_{f}$: velocidade terminal da gota;
-\item m: massa da gota;
-\item g: gravidade no local;
+\item n_{f}: índice de refração final;
+\item n_{i}: índice de refração inicial (vácuo);
+\item \Delta m: variação do número de franjas;
+\item \lambda: comprimento de onda do laser utilizado;
+\item d: comprimento da câmara de vácuo;
+\item \Delta P: variação de pressão registrada no manômetro;
+\item P_{atm}: pressão atmosférica;
+\item P_{0}: pressão inicial na câmara (P_{0} = 0).
 \end{itemize}
-E na descida:
-\begin{itemize}
-\item E: intensidade do campo elÃ©trico;
-\item q: carga do elÃ©tron contido na gota;
-\item m: massa da gota;
-\item g: gravidade no local;
-\item k: constante de atrito com o meio;
-\item $v_{r}$: velocidade e subida da gota;
-\end{itemize}
-De acordo com os esquemas presentes na \ref{im:Esq}, temos as seguintes equaÃ§Ãµes:
-\begin{equation}
-mg = kv_{f}
-\end{equation}
-\begin{equation}
-Eq = mg + kv_{r}
-\end{equation}
-Eliminando k das duas equaÃ§Ãµes e aplicando a soluÃ§Ã£o para q, Ã© possÃ­vel reduzir as equaÃ§Ãµes para:
-\begin{equation}
-q =  \frac{mg(v_{f}+v_{r})}{Ev_{f}}
-\label{eq:3}
-\end{equation}
-Ao aproximar a gota para um formato esfÃ©rico, Ã© possÃ­vel escrever a massa como:
-\begin{equation}
-m =  \frac{4}{3} \pi  a^{3}  \rho
-\label{eq:4}
-\end{equation}	           
-Onde a Ã© o raio da gota e $\rho$ a densidade do Ã³leo. Pela Lei de Stokes, Ã© possÃ­vel relacionar o raio de um corpo esfÃ©rico com sua velocidade de queda num meio viscoso (sendo$\eta$ a constante de viscosidade) pela relaÃ§Ã£o:
-\begin{equation}
-a =  \sqrt{ \frac{9 \eta v_{f}}{2g \rho} }
-\label{eq:5}
-\end{equation}
-Como a velocidade de queda da gota Ã© algo entre 0.01 e 0.001 cm/s, a viscosidade deve ser multiplicada por um fato de correÃ§Ã£o pois a Lei de Stokes funciona para velocidades maiores do que 0.1 cm/s tal que:
-\begin{equation}
-\eta_{f} = \eta \left( \frac{1}{1+ \frac{b}{pa} } \right)
-\label{eq:6}
-\end{equation}
-Onde b Ã© uma constante, p Ã© a pressÃ£o atmosfÃ©rica e a o raio da esfera calculado em \ref{eq:5}. Substituindo o $\eta_{f}$ da equaÃ§Ã£o \ref{eq:6} na equaÃ§Ã£o \ref{eq:5},
-\begin{equation}
-a= \sqrt{ \eta  \frac{9v_{f}}{2gp}  \left( \frac{1}{1+ \frac{b}{pa} } \right)}
-\end{equation}
-\begin{equation}
-a= \sqrt{ \eta  \frac{9v_{f}}{2gp}  \left( \frac{b}{pa+b} \right)}
-\end{equation}
-\begin{equation}
-a =  \sqrt{\left(\frac{b}{2p}\right)^2 +  \frac{9\eta v_{f}}{2gp} } 
-\end{equation}
-Como o segundo termo da raiz Ã© muito pequeno e comparaÃ§Ã£o Ã s dimensÃµes da gota, o valor do raio da esfera pode ser aproximado para:
-\begin{equation}
-a = \frac{b}{2p}
-\label{eq:10}
-\end{equation}
-Substituindo as equaÃ§Ãµes \ref{eq:4}, \ref{eq:5} e \ref{eq:6} na equaÃ§Ã£o \ref{eq:3}:
-
-\begin{equation}
-q = 6\pi \sqrt{ \frac{9\eta^{3}}{2gp \left(1+ \frac{b}{pa} \right)^{3} } (v_{f} + v_{r})\sqrt{v_{f}}}
-\label{eq:11}
-\end{equation}
-
-Substituindo as equaÃ§Ãµes \ref{eq:10} e \ref{eq:6} na equaÃ§Ã£o \ref{eq:11}, tem-se a equaÃ§Ã£o geral para determinaÃ§Ã£o da carga do elÃ©tron que Ã©
-\begin{equation}
-q = \left[400\pi d \left(\frac{1}{gp}\left[\frac{9\eta}{2}\right]^{3}\right)^{\frac{1}{2}}\right] \times \left[\left(\frac{1}{1+\frac{b}{pa}}\right)^{\frac{3}{2}}\right] \times \left[\frac{v_{f}+v_{r}\sqrt{v_{f}}}{V}\right]
-\end{equation}
-Da equaÃ§Ã£o acima, os termos do primeiro membro sÃ£o definidos para cada conjunto experimental, do segundo membro para cada gota e do terceiro membro para cada mudanÃ§a na carga das gotas.
-Adequando a equaÃ§Ã£o para a montagem experimental utilizada, a expressÃ£o Ã© reduzida para:
-\begin{equation}
-q = \frac{mg(v_{f} + v_{r})}{Ev_{f}}
-\end{equation}
-\begin{equation}
-q = \frac{4}{3} \pi \rho g \left[\sqrt{\left(\frac{b}{2p}\right)^{2} + \frac{9\eta v_{f}}{2g\rho}} - \frac{b}{2p} \right]^{3} \times \frac{v_{f} + v_{r}}{Ev_{f}}
-\label{eq:14}
-\end{equation}
 
 
-
-
-
-
-
-	
+\end{document}
