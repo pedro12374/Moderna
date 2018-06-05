@@ -1,53 +1,81 @@
 
-\begin{document}
+\section{FundamentaÃ§Ã£o TeÃ³rica}
+\subsection{O InterferÃ´metro de Michelson}
 
-\section{Fundamentação Teórica}
-\subsection{O Interferômetro de Michelson}
+	Em 1801, o fÃ­sico e mÃ©dico inglÃªs Thomas Young desenvolveu o experimento de fenda dupla que demonstrou o fenÃ´meno de interferÃªncia luminosa. Aproximadamente 80 anos depois, o fÃ­sico Albert Abraham Michelson desenvolveu um interferÃ´metro com mecanismo similar ao de Young. Vale ressaltar que o experimento foi concebido inicialmente com o intuito de comprovar a existÃªncia o Ã©ter como meio material.
+	O interferÃ´metro de Michelson se tornou mundialmente famoso devido Ã  sua relatividade simplicidade e alta aplicabilidade, tanto no meio didÃ¡tico quanto no experimental. A Figura \ref{im:int} demonstra o funcionamento do aparato.
 
-	Em 1801, o físico e médico inglês Thomas Young desenvolveu o experimento de fenda dupla que demonstrou o fenômeno de interferência luminosa. Aproximadamente 80 anos depois, o físico Albert Abraham Michelson desenvolveu um interferômetro com mecanismo similar ao de Young. Vale ressaltar que o experimento foi concebido inicialmente com o intuito de comprovar a existência o éter como meio material.
-	O interferômetro de Michelson se tornou mundialmente famoso devido à sua relatividade simplicidade e alta aplicabilidade, tanto no meio didático quanto no experimental. A Figura 1 demonstra o funcionamento do aparato.
+ \begin{figure}[!htb]
+ 	\centering
+ 		\includegraphics[scale= 0.5]{interferometro.png}
+ 	\caption{InterferÃ´metro de Michelson}
+ 	\label{im:int}
+ \end{figure}
 
-Figura 1 – Interferômetro de Michelson
 
-Ao sair do laser a luz atinge o beam-splitter, onde é dividida de modo que 50% da mesma atinja o espelho fico M1 e os outros 50% o espelho M2. Ao atingir ambos os espelhos, a luz é refletida em direção ao beam-splitter mais uma vez. No caminho de volta, os dois feixes são projetados na tela de visualização. A separação e posteriormente união dos feixes gera uma pequena defasagem entre os mesmos, essa defasagem é o que causa a interferência. Como a diferença de fase é da ordem do comprimento de onda, faz-se necessário o uso de uma lente divergente que amplia a imagem projetada, o que possibilita a visualização do padrão de interferência.
+Ao sair do laser a luz atinge o {\it beam-splitter}, onde Ã© dividida de modo que 50\% da mesma atinja o espelho fÃ­sico M1 e os outros 50\% o espelho M2. Ao atingir ambos os espelhos, a luz Ã© refletida em direÃ§Ã£o ao {\it beam-splitter} mais uma vez. No caminho de volta, os dois feixes sÃ£o projetados na tela de visualizaÃ§Ã£o. A separaÃ§Ã£o e posteriormente uniÃ£o dos feixes gera uma pequena defasagem entre os mesmos, essa defasagem Ã© o que causa a interferÃªncia. Como a diferenÃ§a de fase Ã© da ordem do comprimento de onda, faz-se necessÃ¡rio o uso de uma lente divergente que amplia a imagem projetada, o que possibilita a visualizaÃ§Ã£o do padrÃ£o de interferÃªncia.
+\begin{figure}[!htb]
+	\centering
+		\includegraphics[scale= 0.1]{padrao.jpeg}
+	\caption{PadrÃ£o de interferÃªncia}
+	\label{im:pad}
+\end{figure}
 
-Figura 2 – Padrão de interferência
+	A defasagem entre os feixes de luz decorre da alavanca acoplada no espelho M2, ao variar a posiÃ§Ã£o da alavanca Ã© possÃ­vel gerar uma diferenÃ§a de fase entre os feixes de luz no momento em que se encontram projetados.
+	Ao realizar sucessivas variaÃ§Ãµes na posiÃ§Ã£o do espelho M2 Ã© possÃ­vel determinar o comprimento $\lambda$ a partir da distÃ¢ncia $d_{m}$ medida ao girar a alavanca de M2 e do nÃºmero de franjas de interferÃªncia usando a equaÃ§Ã£o:
 
-	A defasagem entre os feixes de luz decorre da alavanca acoplada no espelho M2, ao variar a posição da alavanca é possível gerar uma diferença de fase entre os feixes de luz no momento em que se encontram projetados.
-	Ao realizar sucessivas variações na posição do espelho M2 é possível determinar o comprimento \lambda a partir da distância d_{m} medida ao girar a alavanca de M2 e do número de franjas de interferência usando a equação:
+$\lambda =  \frac{d_{m}}{m}$
 
-\lambda =  \frac{d_{m}}{m}
+	Se $\lambda$ for conhecido, a mesma equaÃ§Ã£o pode ser utilizada para determinar a distÃ¢ncia $d_{m}$.
 
-	Se \lambda for conhecido, a mesma equação pode ser utilizada para determinar a distância d_{m}.
+\subsection{MediÃ§Ã£o do Ã­ndice de RefraÃ§Ã£o do Ar}
 
-\subsection{Medição do Índice de Refração do Ar}
+	Por ser um equipamento extremamente sensÃ­vel, verifica-se que vibraÃ§Ãµes como andar prÃ³ximo ao aparato Ã© o suficiente para provocar variaÃ§Ãµes no padrÃ£o de interferÃªncia observado. Tendo em vista essa sensibilidade, torna-se possÃ­vel medir o Ã­ndice de refraÃ§Ã£o do ar usando o mesmo equipamento.
 
-	Por ser um equipamento extremamente sensível, verifica-se que vibrações como andar próximo ao aparato é o suficiente para provocar variações no padrão de interferência observado. Tendo em vista essa sensibilidade, torna-se possível medir o índice de refração do ar usando o mesmo equipamento.
-	Ao posicionar uma câmara de vácuo em um dos braços do caminho óptico e variar a pressão dentro da mesma, verifica-se uma série de variações no padrão de interferência projetado.
-	Considerando a pressão inicial da câmara como P_{i} e a final como P_{f}, tem-se as equações:
+	Ao posicionar uma cÃ¢mara de vÃ¡cuo em um dos braÃ§os do caminho Ã³ptico e variar a pressÃ£o dentro da mesma, verifica-se uma sÃ©rie de variaÃ§Ãµes no padrÃ£o de interferÃªncia projetado.
+
+	Considerando a pressÃ£o inicial da cÃ¢mara como $P_{i}$ e a final como $P_{f}$, tem-se as equaÃ§Ãµes:
+\begin{equation}
 \lambda_{i} = \frac{2d_{i}}{\Delta m_{i}}
+\label{eq:lbd}
+\end{equation}
+\begin{equation}
 \lambda_{f} = \frac{2d_{f}}{\Delta m_{i}}
-	Intuitivamente, observa-se que para a diferença de pressão P_{f}-P_{i} surge a relação
+\end{equation}
+	Intuitivamente, observa-se que para a diferenÃ§a de pressÃ£o $P_{f}-P_{i}$ surge a relaÃ§Ã£o
+\begin{equation}
 \Delta m = \Delta m_{f} - \Delta m_{i}
+\end{equation}
+\begin{equation}
 \Delta m = \frac{2d}{\lambda_{f}} - \frac{2d}{\lambda_{i}}
+\end{equation}
+\begin{equation}
 \Delta m = \frac{2d}{\frac{\lambda_{0}}{n_{f}}} - \frac{2d}{\frac{\lambda_{0}}{n_{i}}}
-\Delta m = \frac{2d}{\lambda_{0}}(n_{f}-n{i}})
+\end{equation}
+\begin{equation}
+\Delta m = \frac{2d}{\lambda_{0}}(n_{f}-n{i})
 (n_{f}-n_{i}) = \frac{\Delta m \lambda_{0}}{2d}
-	Dividindo a equação por (P_{f} – P_{i}),
+\end{equation}
+	Dividindo a equaÃ§Ã£o por $(P_{f}-P_{i})$,
+\begin{equation}
 \frac{n_{f}-n_{i}}{P_{f}-P_{i}} = \frac{\Delta m \lambda_{0}}{2d} \frac{1}{P_{f}-P_{i}}
-	De onde é possível escrever, por fim,
+\end{equation}
+	De onde Ã© possÃ­vel escrever, por fim,
+\begin{equation}
 n_{f} = n_{i} + \frac{\Delta m \lambda}{2d \Delta P} (P_{atm}-P_{0})
+\label{eq:ni}
+\end{equation}
 	Onde
 \begin{itemize}
-\item n_{f}: índice de refração final;
-\item n_{i}: índice de refração inicial (vácuo);
-\item \Delta m: variação do número de franjas;
-\item \lambda: comprimento de onda do laser utilizado;
-\item d: comprimento da câmara de vácuo;
-\item \Delta P: variação de pressão registrada no manômetro;
-\item P_{atm}: pressão atmosférica;
-\item P_{0}: pressão inicial na câmara (P_{0} = 0).
+\item $n_{f}$: Ã­ndice de refraÃ§Ã£o final;
+\item $n_{i}$: Ã­ndice de refraÃ§Ã£o inicial (vÃ¡cuo);
+\item $\Delta m$: variaÃ§Ã£o do nÃºmero de franjas;
+\item $\lambda$: comprimento de onda do laser utilizado;
+\item $d$: comprimento da cÃ¢mara de vÃ¡cuo;
+\item $\Delta P$: variaÃ§Ã£o de pressÃ£o registrada no manÃ´metro;
+\item $P_{atm}$: pressÃ£o atmosfÃ©rica;
+\item $P_{0}$: pressÃ£o inicial na cÃ¢mara ($P_{0} = 0$).
 \end{itemize}
 
 
-\end{document}
+
