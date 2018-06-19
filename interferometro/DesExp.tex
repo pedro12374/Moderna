@@ -1,6 +1,10 @@
 \section{Desenvolvimento Experimental}
 \subsection{Materiais e Métodos}
+<<<<<<< HEAD
 Foi utilizado para o experimento o equipamento PASCO Modelo OS-9171 cosntituido por: 
+=======
+Foi utilizado para o experimento o equipamento PASCO Modelo OS-8501 cosntituido por: 
+>>>>>>> f8d5dbf13b81f1364abbea5dea07f67d646da400
 \begin{itemize}
 	\item Espelho fixo (M1);
 	\item Espelho móvel (M2);
@@ -14,6 +18,7 @@ Sendo utilizado também:
 	\item Lente divergente.
 \end{itemize}
 
+<<<<<<< HEAD
     O primeiro passo é alinhar o laser de comprimento de onda conhecido com o espelho móvel da base do interferômetro - é importante que o raio refletido seja desviado poucos milímetros do orifício do laser, evitando reflexões em seu interior. Após, insere-se a lente divergente entre o laser e o \it{beam-splitter}, posicionado a 45º de forma que o feixe seja parcialmente refletido para o espelho fixo, como consequência deve-se ver um padrão de franjas claras/escuras na superfície de projeção. Caso sejam formados dois padrões de franjas, deve-se ajustar o espelho fixo para que ambas se sobreponham. 
     Recomenda-se demarcar na superfície de projeção os limites de uma das franjas para facilitar a contagem durante o experimento, outra sugestão é a de se usar uma câmera fotográfica com filmagem em câmera lenta durante a contagem. 
     
@@ -69,28 +74,35 @@ Gota & $Carga \times 10^{-19} (C)$ & $\Delta Carga$ \\
 \label{tab:Car}
 \end{table}
 
+=======
+    O primeiro passo é alinhar o laser de comprimento de onda conhecido com o espelho móvel da base do interferômetro - é importante que o raio refletido seja desviado poucos milímetros do orifício do laser, evitando reflexões em seu interior. Após, insere-se a lente divergente entre o laser e o {\it beam-splitter}, posicionado a 45º de forma que o feixe seja parcialmente refletido para o espelho fixo, como consequência deve-se ver um padrão de franjas claras/escuras na superfície de projeção. Caso sejam formados dois padrões de franjas, deve-se ajustar o espelho fixo para que ambas se sobreponham. 
+>>>>>>> f8d5dbf13b81f1364abbea5dea07f67d646da400
 
+    Recomenda-se demarcar na superfície de projeção os limites de uma das franjas para facilitar a contagem durante o experimento, outra sugestão é a de se usar uma câmera fotográfica com filmagem em câmera lenta durante a contagem. 
+    
+Então é realizado a calibração do interferômetro utilizando o laser conhecido, inicialmente é posto a contagem do micrômetro no zero e então feito um deslocamento no espelho móvel utilizando a haste do micrômetro em 20 unidades, e contando quantas franjas são deslocadas é possível calibrar o interferômetro para que o comprimento de onda de qualquer laser possa ser encontrado.
 
+O próximo estágio realizado é para se aferir o índice de refração do ar, é montado o equipamento com o laser de HeNe e antes do espelho fixo é posto uma câmara onde será feito vácuo, então o equipamento é alinhado novamento e variando a pressão na câmara de 10 em 10 mmMg é contado a variação das franjas. 	 
 \subsection{Interpretação dos Resultados}
-Utilizando os dados contidos na tabela \ref{tab:Car} é possível produzir o gráfico \ref{im:Car} que contêm a carga pelo número da gota, e assim analisar de forma adequada os dados obtidos.
+Após a realização da primeira parte do experimento, é encontrado que  cada variação do micrômetro equivale na verdade a $20,2 \times 10^{-6} m$. Substituindo o laser conhecido por um qualquer e utilizando a equação (\ref{eq:lbd}), é possivel encontrar o comprimento de onda do laser.
 
-\begin{figure}[!htb]
-	\centering
-		\includegraphics[scale= 1]{grafico/gotas.pdf}
-	\caption{Distribuição de carga das gotas.}
-	\label{im:Car}
-\end{figure}
+Para a segunda parte do experimento, foram repetidas as aferições para que o erro fosse reduzido, então com os dados de $\Delta P$ e $\Delta M$ e utilizando a equação (\ref{eq:ni}) são obtidos valores para a confecção do gráfico de $\eta \times \Delta P$ encontrado na figura (\ref{im:aa}).
 
-Analisando o gráfico \ref{im:Car} juntamente com os valores obtidos, temos que as gotas estão separadas em três grupos com um espaçamento regular, um primeiro com as gotas 1,2,10, o segundo grupo com as gotas 3,6,9 e o ultimo grupo com 4,5,7,8. Com isto somos levados a crer que o incremento de carga não é continuo e sim discreto ou quantizado, e este valor pode ser aferido realizando a diferença entre as médias de carga de cada grupo.
+ \begin{figure}[!h]
+ 	\centering
+ 		\includegraphics[scale= 1]{grafico/ar.pdf}
+ 	\caption{Interferômetro de Michelson}
+ 	\label{im:aa}
+ \end{figure}
 
-\begin{table}[!htb]
-\centering
-\begin{tabular}{l|l|l|}
-Grupo 1 (C)            & Grupo 2 (C)            & Grupo 3 (C)             \\ \hline
-\rowcolor[HTML]{C0C0C0} 
-$2,51 \times 10^{-19}$ & $1,35 \times 10^{-19}$ & $0,26  \times 10^{-19}$ \\ \hline
-\end{tabular}
-\caption{Média dos grupos de gotas.}
+Assim 
+\begin{equation*}
+\alpha = \frac{\Delta m\lambda}{2d\Delta P}
+\end{equation*}
+\begin{equation*}
+\alpha = 2.78\times 10^{-7}
+\end{equation*}
 
-\end{table}
-Fazendo a diferença entre os grupos é obtido o salto médio de $1,12 \times 10^{-19} C$, sendo este o valor de carga de cada elétron obtido pelo experimento. Comparando o valor experimental é obtido 29,90\% de erro em relação ao valor de $e = 1.6021765 \times 10^{-19} C$
+Calculando o valor do coeficiente angular da reta é possivel encontrar o valor do índice de refração do ar, $\eta_{ar}$, aplicando o valor encontrado na equação (\ref{eq:ni}) e para este experimento foi encontrado $\eta_{exp} = 1.00002052$.
+
+Comparando o valor obtido com o teórico que vale $\eta_{ar} = 1.000293$ é encontrado um desvio percentual de $D\% = 0,0272\%$.
