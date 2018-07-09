@@ -4,9 +4,8 @@
 \contentsline {section}{\numberline {2}Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}{3}
 \contentsline {subsection}{\numberline {2.1}O Interfer\IeC {\^o}metro de Michelson}{3}
 \contentsline {subsection}{\numberline {2.2}Medi\IeC {\c c}\IeC {\~a}o do \IeC {\'\i }ndice de Refra\IeC {\c c}\IeC {\~a}o do Ar}{4}
-\contentsline {section}{\numberline {3}Desenvolvimento Experimental}{6}
-\contentsline {subsection}{\numberline {3.1}Materiais e M\IeC {\'e}todos}{6}
-\contentsline {subsection}{\numberline {3.2}Dados Obtidos Experimentalmente}{6}
-\contentsline {subsection}{\numberline {3.3}Interpreta\IeC {\c c}\IeC {\~a}o dos Resultados}{7}
-\contentsline {section}{\numberline {4}Conclus\IeC {\~a}o}{9}
-\contentsline {section}{Refer\^encias}{10}
+\contentsline {section}{\numberline {3}Desenvolvimento Experimental}{5}
+\contentsline {subsection}{\numberline {3.1}Materiais e M\IeC {\'e}todos}{5}
+\contentsline {subsection}{\numberline {3.2}Interpreta\IeC {\c c}\IeC {\~a}o dos Resultados}{5}
+\contentsline {section}{\numberline {4}Conclus\IeC {\~a}o}{7}
+\contentsline {section}{Refer\^encias}{8}
