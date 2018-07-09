@@ -1,0 +1,103 @@
+\section{Desenvolvimento Experimental}
+\subsection{Materiais e Métodos}
+Foram utilizados para a realização do experimento:
+\begin{itemize}
+	\item Prisma;
+	\item Lampada de Hélio;
+	\item Lampada de Mercúrio;
+	\item Lampada de Sódio;
+	\item Lampada de filamento de Tungstênio;
+	\item Duas lentes;
+	\item Aparato PASCO aaaaaaaa
+	\item Um separador de feixes;
+	\item Um espelho de alta rotação PASCO OS-9263B;
+	\item Um espelho fixo esférico com raio de 13,5 m;
+\end{itemize}
+Sendo o experimento montado da seguinte forma:
+
+
+
+Primeiro o laser e o espelho rotatório são alinhados sobre a mesa com o auxílio dos gabaritos, é posto então a primeira lente (48 mm), em seguida o separador de feixes e então a segunda lente (252 mm), é fundamental que ao colocar cada objeto óptico seja revisado seu alinhamento com o plano do laser. Utilizando regras trigonométricas, é posto então o espelho fixo esférico a cerca de 9 metros
+do espelho giratório, formando entre eles um ângulo de aproximadamente 12º e, em seguida, alinhado seus centros observando  se o raio de luz está retornando ao separador de feixes. Nessa última etapa, é substituido a ocular do separador por um papel de pequena gramatura e, bloqueando o feixe de luz refletido pelo espelho rotatório, pode-se ver um ponto piscando no papel, o que significa que os espelhos estão alinhados. Por fim, é recolocado a ocular e alinhado o mostrador do micrômetro com o ponto de luz.
+\subsection{Dados Obtidos Experimentalmente}
+Após a realização da primeira parte do experimento experimento, foram obtidos alguns dados que podem ser observados nos próximos gráficos, onde é mostrado as curvas de intensidade pelo angulo de incidência.
+
+\begin{figure}[!htb]
+	\centering
+		\includegraphics[scale= 1.2]{fig/All.pdf}
+	\caption{Gráfico com todos as voltagens utilizadas.}
+	\label{fig:All}
+\end{figure}
+
+
+Onde cada linha representa uma diferente voltagem aplicada no filamento utilizado em relação a angulação feita pelo disco, ou seja, a posição angular em que o prisma abriu o feixe incidente.
+
+
+Em seguida, para a segunda montagem experimental foram obtidos diversos gráficos de intensidade pelo comprimento de onda para diversas lampadas.
+
+\begin{figure}[!htb]
+	\centering
+		
+		\subfloat{\label{fig:BB}}\includegraphics[scale= 0.6]{fig/BB.pdf}
+		\subfloat[Lampada de Hélio ]{\label{fig:Helio}}\includegraphics[scale= 0.6]{fig/Helio.pdf}
+		\\
+		\subfloat[Lampada de Sódio ]{\label{fig:Sodio}}\includegraphics[scale= 0.6]{fig/Sodio.pdf}	
+		\subfloat[Lampada de Mercúrio ]{\label{fig:Merc}}\includegraphics[scale= 0.6]{fig/Mercurio.pdf}
+	
+	\caption{Gráficos das diferentes lampadas utilizadas na segunda pate do experimento}
+	\label{fig:Gas}
+\end{figure}
+
+\subsection{Interpretação dos Resultados}
+
+Sabendo-se que
+\begin{equation}
+	c = \frac{4AD^22\pi f}{(D+B)\Delta s}
+\end{equation}
+é possível fazer
+\begin{equation}
+\begin{split}
+	\Delta s = \frac{4AD^22\pi f}{(D+B)c}\\
+	\Delta s = 2\times10^{-7}f
+\end{split}
+\end{equation}
+portanto,
+\begin{equation}
+	2\times10^{-7}=\frac{8AD^2\pi}{(D+B)c}\\
+\end{equation}
+\begin{equation}
+	c=\frac{8AD^2\pi}{(D+B)2\times10^{-7}}
+\label{EQ}
+\end{equation}
+Substituindo os valores obtidos
+\begin{equation}
+	\begin{split}
+		A = (0,261\pm0,0005)m\\
+		B = (0,586\pm0,0005)m\\
+		D = (9,485\pm0,0005)m
+	\end{split}
+\end{equation}
+na equação \ref{EQ} obtem-se
+\begin{equation}
+	c=\frac{8*(0,261)*(9,485)^2*\pi}{[9,485+0,586]*2\times10^{-7}}
+\end{equation}
+e portanto
+\begin{equation}
+	c=(2,929\pm0,032)\times10^{8} m/s
+\end{equation}
+onde o valor de $0,032$ é obtido utilizando a equação \ref{eq:err}.\\
+Comparado ao valor de 
+\begin{equation}
+	c=2,998\times10^{8} m/s
+\end{equation}        
+obtido na literatura \cite{PASCO}, resulta em um erro relativo ($Er$) de:
+\begin{equation}
+	Er=|\frac{2,929\times10^{8}-2,998\times10^{8}}{2,998\times10^{8}}|*100\%= 2,3\%
+\end{equation}
+
+Estes erros estão associados a montagem do experimento, sendo
+possível um desalinhamento dos espelhos e lentes, além do feixe não estar colidindo exatamente no
+centro do espelho fixo, o que acarreta uma variação do valor de $c$ predito na literatura. Porém, mesmo com todos os fatores associados, o erro  de
+2,3\% é aceitável dentro da precisão nescessária para a realização
+do experimento.
+
